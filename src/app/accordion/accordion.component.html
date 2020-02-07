@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="search_wrapper position-relative">
+          <div class="center-block">
+            <input type="search" name="item_search" id="item_search" [(ngModel)]="inputmail">
+            <span class="search_icon"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+        <div class="content_wrapper">
+            <hr>
+            <div class="accodian" *ngFor="let data of dataContent | accordion:inputmail; let i=index">
+                <h4>
+                    <span>{{data.email}}</span>
+                    <span class="icon" (click)="displayDetails(i)">
+                        <i [ngClass]="data.isDisplay ? 'fa fa-chevron-up' : 'fa fa-chevron-down'"></i>
+                    </span>
+                    <hr>
+                </h4>
+                <div *ngIf="data.isDisplay">   
+                    <p>{{data.first_name}} {{data.last_name}}</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

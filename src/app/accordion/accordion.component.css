@@ -1,0 +1,43 @@
+.search_wrapper {
+    height: 40px;
+    width: 60%;
+    background-color: aquamarine;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.search_icon {
+    color: yellow;
+    background-color: blue;
+    margin: 0 auto;
+}
+.center-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.position-relative {
+    position: relative !important;
+}
+.content_wrapper {
+    width: 60%;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: solid 0.5px gray;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 0.5px solid #000;
+}
+.icon {
+    float: right;
+}
+
+.content {
+    cursor: pointer;
+}
